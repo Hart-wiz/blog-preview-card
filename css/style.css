@@ -1,0 +1,110 @@
+/* css reset */
+@import url(reset.css);
+
+@font-face {
+  font-family: fig-extrabold;
+  src: url(../assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+@font-face {
+  font-family: fig-semibold;
+  src: url(../assets/fonts/static/Figtree-SemiBold.ttf);
+}
+@font-face {
+  font-family: fig-variablefont;
+  src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+/* Root Variables */
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+}
+
+/* styling body */
+body {
+  background-color: var(--Yellow);
+  display: flex;
+  flex-direction: column;
+  padding-top: 10vh;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 30vw;
+  height: auto;
+  padding: 1em;
+  border-radius: 0.5em;
+  font-size: 1rem;
+  font-family: fig-semibold;
+  border: var(--Gray-500), solid, 0.5px;
+  box-shadow: 9px 9px 3px;
+}
+.front-image {
+  border-radius: 0.5em;
+}
+.front-image img {
+  width: 100%;
+  min-height: 100%;
+  border-radius: 0.5em;
+}
+
+/* styling section two .text-area */
+.text-area h2 {
+  color: var(--Gray-950);
+  background-color: var(--Yellow);
+  font-weight: 800;
+  width: fit-content;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  font-family: fig-extrabold;
+}
+.text-area span {
+  font-weight: 500;
+  display: block;
+  padding: 0.5em 0;
+}
+.text-area h1 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 0.5em 0;
+  font-family: fig-extrabold;
+}
+.text-area h1:hover {
+  cursor: pointer;
+  color: var(--Yellow);
+}
+.text-area article {
+  color: var(--Gray-500);
+}
+
+/* author profile section */
+.author-profile {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  padding-top: 1em;
+  font-family: fig-extrabold;
+}
+.author-profile img {
+  width: 30px;
+}
+.author-profile b {
+  font-weight: 800;
+  align-self: center;
+}
+
+/* styling for mobile */
+
+@media screen and (max-width: 700px) {
+  body {
+    padding-top: 15vh;
+  }
+  main {
+    width: 80vw;
+  }
+}
