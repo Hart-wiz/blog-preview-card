@@ -27,7 +27,9 @@ body {
   background-color: var(--Yellow);
   display: flex;
   flex-direction: column;
-  padding-top: 10vh;
+  padding-top: 17vh;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
@@ -35,7 +37,7 @@ main {
   display: flex;
   flex-direction: column;
   align-self: center;
-  width: 30vw;
+  width: 384px;
   height: auto;
   padding: 1em;
   border-radius: 0.5em;
@@ -100,11 +102,11 @@ main {
 
 /* styling for mobile */
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 800px) {
   body {
-    padding-top: 15vh;
+    padding-top: 20vh;
   }
   main {
-    width: 80vw;
+    width: 60vw;
   }
-}
+} */
