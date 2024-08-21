@@ -27,7 +27,7 @@ body {
   background-color: var(--Yellow);
   display: flex;
   flex-direction: column;
-  padding-top: 17vh;
+  padding-top: 18vh;
   /* align-items: center;
   justify-content: center; */
 }
@@ -39,15 +39,15 @@ main {
   align-self: center;
   width: 384px;
   height: auto;
-  padding: 1em;
-  border-radius: 0.5em;
+  padding: 2em;
+  border-radius: 1em;
   font-size: 1rem;
   font-family: fig-semibold;
   border: var(--Gray-500), solid, 0.5px;
   box-shadow: 9px 9px 3px;
 }
 .front-image {
-  border-radius: 0.5em;
+  border-radius: 1em;
 }
 .front-image img {
   width: 100%;
@@ -62,18 +62,19 @@ main {
   font-weight: 800;
   width: fit-content;
   padding: 0.5em;
+  margin: 1em 0;
   border-radius: 0.3em;
   font-family: fig-extrabold;
 }
 .text-area span {
   font-weight: 500;
   display: block;
-  padding: 0.5em 0;
+  padding-bottom: 0.5em;
 }
 .text-area h1 {
   font-size: 1.2rem;
   font-weight: 800;
-  padding: 0.5em 0;
+  padding: 1em 0;
   font-family: fig-extrabold;
 }
 .text-area h1:hover {
@@ -89,7 +90,7 @@ main {
   display: flex;
   flex-direction: row;
   gap: 0.5em;
-  padding-top: 1em;
+  padding-top: 2em;
   font-family: fig-extrabold;
 }
 .author-profile img {
@@ -102,11 +103,11 @@ main {
 
 /* styling for mobile  */
 
-@media screen and (max-width: 600px) {
-  body {
+@media screen and (max-width: 400px) {
+  /* body {
     padding-top: 20vh;
-  }
+  } */
   main {
-    width: 80vw;
+    width: 90vw;
   }
 }
