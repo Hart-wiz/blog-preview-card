@@ -27,7 +27,7 @@ body {
   background-color: var(--Yellow);
   display: flex;
   flex-direction: column;
-  padding-top: 18vh;
+  padding-top: 15vh;
   /* align-items: center;
   justify-content: center; */
 }
@@ -39,12 +39,14 @@ main {
   align-self: center;
   width: 384px;
   height: auto;
-  padding: 2em;
+  padding: 1.5em;
+  padding-bottom: 0.5em;
   border-radius: 1em;
   font-size: 1rem;
   font-family: fig-semibold;
   border: var(--Gray-500), solid, 0.5px;
   box-shadow: 9px 9px 3px;
+  margin-bottom: 1em;
 }
 .front-image {
   border-radius: 1em;
@@ -83,6 +85,7 @@ main {
 }
 .text-area article {
   color: var(--Gray-500);
+  line-height: 1.5;
 }
 
 /* author profile section */
@@ -90,7 +93,7 @@ main {
   display: flex;
   flex-direction: row;
   gap: 0.5em;
-  padding-top: 2em;
+  padding: 1em 0;
   font-family: fig-extrabold;
 }
 .author-profile img {
@@ -104,9 +107,9 @@ main {
 /* styling for mobile  */
 
 @media screen and (max-width: 400px) {
-  /* body {
-    padding-top: 20vh;
-  } */
+  body {
+    padding-top: 10vh;
+  }
   main {
     width: 90vw;
   }
