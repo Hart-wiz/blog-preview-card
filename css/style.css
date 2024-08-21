@@ -28,8 +28,8 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 17vh;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 main {
@@ -100,13 +100,13 @@ main {
   align-self: center;
 }
 
-/* styling for mobile */
+/* styling for mobile  */
 
-/* @media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   body {
     padding-top: 20vh;
   }
   main {
-    width: 60vw;
+    width: 80vw;
   }
-} */
+}
